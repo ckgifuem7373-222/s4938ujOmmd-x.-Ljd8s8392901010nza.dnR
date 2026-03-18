@@ -199,12 +199,12 @@ Eclipse.Scales = {
 Eclipse.IconColor = Color3.fromRGB(255, 255, 255);
 Eclipse.ScreenGui = GlobalWindow;
 Eclipse.Flags = {};
-Eclipse.AccentColor = Color3.fromRGB(138, 43, 226); -- Purple accent for Eclipse
+Eclipse.AccentColor = Color3.fromRGB(255, 140, 0); -- Orange accent for Eclipse (Dark Orange)
 Eclipse.MainColor = Color3.fromRGB(8, 8, 13);
 Eclipse.RegisiteryColor = {};
 Eclipse.NameRegisitry = {};
 Eclipse.IsMosueOverOtherFrame = false;
-Eclipse.GlobalLogo = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/logo%20(3).png?raw=true";
+Eclipse.GlobalLogo = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/logo.png?raw=true";
 Eclipse.ImageColorMapping = "rbxassetid://4155801252";
 
 if getcustomasset then
