@@ -204,12 +204,12 @@ Eclipse.MainColor = Color3.fromRGB(8, 8, 13);
 Eclipse.RegisiteryColor = {};
 Eclipse.NameRegisitry = {};
 Eclipse.IsMosueOverOtherFrame = false;
-Eclipse.GlobalLogo = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/logo.png?raw=true";
+Eclipse.GlobalLogo = "rbxassetid://120358385035996";
 Eclipse.ImageColorMapping = "rbxassetid://4155801252";
 
 if getcustomasset then
-	local link = "https://github.com/4lpaca-pin/Eclipse/blob/main/assets/%s?raw=true";
-	local dir = 'NLAssets';
+	local link = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/%s?raw=true";
+	local dir = 'EclipseAssets';
 
 	if not isfolder(dir) then
 		makefolder(dir);
