@@ -217,7 +217,7 @@ if getcustomasset then
 
 	pcall(function()
 		if not isfile(dir..'/'..'logo.png') then
-			local byte = game:HttpGet(string.format(link,'logo.png'));
+			local byte = game:HttpGet(string.format(link,'logo%20(3).png'));
 
 			writefile(dir..'/'..'logo.png' , byte);
 			task.wait();
@@ -3906,8 +3906,8 @@ function Eclipse:CreateWindow(Config)
 	WindowFrame.Name = Eclipse.RandomString();
 	WindowFrame.Parent = Eclipse.ScreenGui;
 	WindowFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	WindowFrame.BackgroundColor3 = Color3.fromRGB(8, 8, 13)
-	WindowFrame.BackgroundTransparency = 0.055
+	WindowFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	WindowFrame.BackgroundTransparency = 0
 	WindowFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	WindowFrame.BorderSizePixel = 0
 	WindowFrame.ClipsDescendants = true
@@ -3916,7 +3916,7 @@ function Eclipse:CreateWindow(Config)
 	WindowFrame.Active = true;
 
 	if not Eclipse.EnabledBlur then
-		WindowFrame.BackgroundTransparency = 0.0255
+		WindowFrame.BackgroundTransparency = 0
 	end;
 
 	local renderParentWindow = LPH_NO_VIRTUALIZE(function()
@@ -3951,7 +3951,7 @@ function Eclipse:CreateWindow(Config)
 	Window.SetRender = LPH_NO_VIRTUALIZE(function(self , value)
 		if value then
 			Eclipse.PlayAnimate(WindowFrame , SlowyTween , {
-				BackgroundTransparency = (Eclipse.EnabledBlur and 0.055) or 0.0255,
+				BackgroundTransparency = 0,
 				Size = Window.Size
 			})
 
@@ -4216,7 +4216,7 @@ function Eclipse:CreateWindow(Config)
 	WindowName.ZIndex = 7
 	WindowName.Font = Enum.Font.GothamBold
 	WindowName.Text = Window.Name
-	WindowName.TextColor3 = Color3.fromRGB(255, 255, 255)
+	WindowName.TextColor3 = Eclipse.AccentColor
 	WindowName.TextSize = 18.000
 	WindowName.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -4239,12 +4239,12 @@ function Eclipse:CreateWindow(Config)
 	LineFrame.Name = Eclipse.RandomString();
 	LineFrame.Parent = HeadFrame
 	LineFrame.AnchorPoint = Vector2.new(0.5, 1)
-	LineFrame.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
-	LineFrame.BackgroundTransparency = 0.650
+	LineFrame.BackgroundColor3 = Eclipse.AccentColor
+	LineFrame.BackgroundTransparency = 0.3
 	LineFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	LineFrame.BorderSizePixel = 0
 	LineFrame.Position = UDim2.new(0.5, 0, 1, 0)
-	LineFrame.Size = UDim2.new(1, -10, 0, 1)
+	LineFrame.Size = UDim2.new(1, -10, 0, 2)
 	LineFrame.ZIndex = 5
 
 	LeftScrollingFrame.Name = Eclipse.RandomString();
@@ -4330,12 +4330,12 @@ function Eclipse:CreateWindow(Config)
 	LineFrame_2.Name = Eclipse.RandomString();
 	LineFrame_2.Parent = BottomFrame
 	LineFrame_2.AnchorPoint = Vector2.new(0.5, 0)
-	LineFrame_2.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
-	LineFrame_2.BackgroundTransparency = 0.650
+	LineFrame_2.BackgroundColor3 = Eclipse.AccentColor
+	LineFrame_2.BackgroundTransparency = 0.3
 	LineFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	LineFrame_2.BorderSizePixel = 0
 	LineFrame_2.Position = UDim2.new(0.5, 0, 0, 0)
-	LineFrame_2.Size = UDim2.new(1, -10, 0, 1)
+	LineFrame_2.Size = UDim2.new(1, -10, 0, 2)
 	LineFrame_2.ZIndex = 5
 
 	UserSettingButton.Name = Eclipse.RandomString();
