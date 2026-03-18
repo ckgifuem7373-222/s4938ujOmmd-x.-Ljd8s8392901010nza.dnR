@@ -204,7 +204,7 @@ Eclipse.MainColor = Color3.fromRGB(8, 8, 13);
 Eclipse.RegisiteryColor = {};
 Eclipse.NameRegisitry = {};
 Eclipse.IsMosueOverOtherFrame = false;
-Eclipse.GlobalLogo = "rbxassetid://120358385035996";
+Eclipse.GlobalLogo = "https://raw.githubusercontent.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/main/assets/logo%20(3).png";
 Eclipse.ImageColorMapping = "rbxassetid://4155801252";
 
 if getcustomasset then
@@ -2040,7 +2040,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 				});
 
 				Eclipse.PlayAnimate(UIStroke,SlowyTween,{
-					Transparency = 0.650
+					Transparency = 0.3
 				});
 
 				Eclipse.PlayAnimate(ValueLabel,SlowyTween,{
@@ -3868,6 +3868,7 @@ function Eclipse:CreateWindow(Config)
 
 	local WindowFrame = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
+	local BackgroundPattern = Instance.new("ImageLabel")
 	local TopGradientLine = Instance.new("Frame")
 	local TopGradientLineGradient = Instance.new("UIGradient")
 	local LeftMenuFrame = Instance.new("Frame")
@@ -4158,6 +4159,16 @@ function Eclipse:CreateWindow(Config)
 
 	UICorner.Parent = WindowFrame
 
+	BackgroundPattern.Name = Eclipse.RandomString();
+	BackgroundPattern.Parent = WindowFrame
+	BackgroundPattern.BackgroundTransparency = 1
+	BackgroundPattern.Size = UDim2.new(1, 0, 1, 0)
+	BackgroundPattern.ZIndex = 1
+	BackgroundPattern.Image = "https://raw.githubusercontent.com/ckgifuem7373-222/jhgsfdxd3453sdfdfndf/main/GUI/assets/uzor.png"
+	BackgroundPattern.ImageTransparency = 0.85
+	BackgroundPattern.ScaleType = Enum.ScaleType.Tile
+	BackgroundPattern.TileSize = UDim2.new(0, 512, 0, 512)
+
 	TopGradientLine.Name = Eclipse.RandomString();
 	TopGradientLine.Parent = WindowFrame
 	TopGradientLine.BackgroundColor3 = Eclipse.AccentColor
@@ -4216,7 +4227,7 @@ function Eclipse:CreateWindow(Config)
 	WindowName.ZIndex = 7
 	WindowName.Font = Enum.Font.GothamBold
 	WindowName.Text = Window.Name
-	WindowName.TextColor3 = Eclipse.AccentColor
+	WindowName.TextColor3 = Color3.fromRGB(255, 255, 255)
 	WindowName.TextSize = 18.000
 	WindowName.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -5032,8 +5043,8 @@ function Eclipse:CreateWindow(Config)
 			SectionHandler.Size = UDim2.new(1, -10, 1, -21)
 			SectionHandler.ZIndex = 9
 
-			UIStroke.Transparency = 0.650
-			UIStroke.Color = Color3.fromRGB(45, 48, 58)
+			UIStroke.Transparency = 0.3
+			UIStroke.Color = Eclipse.AccentColor
 			UIStroke.Parent = SectionHandler
 
 			UICorner.CornerRadius = UDim.new(0, 10)
