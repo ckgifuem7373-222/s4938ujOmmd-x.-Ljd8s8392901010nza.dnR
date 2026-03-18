@@ -204,7 +204,7 @@ Eclipse.MainColor = Color3.fromRGB(8, 8, 13);
 Eclipse.RegisiteryColor = {};
 Eclipse.NameRegisitry = {};
 Eclipse.IsMosueOverOtherFrame = false;
-Eclipse.GlobalLogo = "rbxassetid://120358385035996";
+Eclipse.GlobalLogo = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/logo%20(3).png?raw=true";
 Eclipse.ImageColorMapping = "rbxassetid://4155801252";
 
 if getcustomasset then
