@@ -196,7 +196,7 @@ Eclipse.Scales = {
 	Large = UDim2.fromOffset(800 , 600)
 };
 
-Eclipse.IconColor = Color3.fromRGB(255, 255, 255);
+Eclipse.IconColor = Color3.fromRGB(255, 140, 0); -- Orange icons
 Eclipse.ScreenGui = GlobalWindow;
 Eclipse.Flags = {};
 Eclipse.AccentColor = Color3.fromRGB(255, 140, 0); -- Orange accent for Eclipse (Dark Orange)
@@ -208,7 +208,7 @@ Eclipse.GlobalLogo = "rbxassetid://120358385035996";
 Eclipse.ImageColorMapping = "rbxassetid://4155801252";
 
 if getcustomasset then
-	local link = "https://github.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/blob/main/assets/%s?raw=true";
+	local link = "https://raw.githubusercontent.com/ckgifuem7373-222/s4938ujOmmd-x.-Ljd8s8392901010nza.dnR/main/assets/%s";
 	local dir = 'EclipseAssets';
 
 	if not isfolder(dir) then
@@ -3868,6 +3868,8 @@ function Eclipse:CreateWindow(Config)
 
 	local WindowFrame = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
+	local TopGradientLine = Instance.new("Frame")
+	local TopGradientLineGradient = Instance.new("UIGradient")
 	local LeftMenuFrame = Instance.new("Frame")
 	local HeadFrame = Instance.new("Frame")
 	local LogoImage = Instance.new("ImageLabel")
@@ -4155,6 +4157,20 @@ function Eclipse:CreateWindow(Config)
 	end
 
 	UICorner.Parent = WindowFrame
+
+	TopGradientLine.Name = Eclipse.RandomString();
+	TopGradientLine.Parent = WindowFrame
+	TopGradientLine.BackgroundColor3 = Eclipse.AccentColor
+	TopGradientLine.BorderSizePixel = 0
+	TopGradientLine.Size = UDim2.new(1, 0, 0, 3)
+	TopGradientLine.ZIndex = 10
+
+	TopGradientLineGradient.Color = ColorSequence.new{
+		ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 140, 0)),
+		ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 100, 0)),
+		ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 140, 0))
+	}
+	TopGradientLineGradient.Parent = TopGradientLine
 
 	LeftMenuFrame.Name = Eclipse.RandomString();
 	LeftMenuFrame.Parent = WindowFrame
