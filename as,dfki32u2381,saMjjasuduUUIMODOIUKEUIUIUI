@@ -1267,7 +1267,7 @@ function Eclipse:CreateOptionWindow(Frame: Frame , Zindex)
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
 	UIStroke.Transparency = 0.650
-	UIStroke.Color = Color3.fromRGB(45, 48, 58)
+	UIStroke.Color = Eclipse.AccentColor
 	UIStroke.Parent = OptionHandler
 
 	Eclipse:AddSignal(UIListLayout:GetPropertyChangedSignal('AbsoluteContentSize'):Connect(LPH_NO_VIRTUALIZE(function()
@@ -1413,7 +1413,7 @@ function Eclipse:CreateColorPicker(HandleFrame: Frame)
 	UICorner.Parent = ColorPickerHandler
 
 	UIStroke.Transparency = 0.650
-	UIStroke.Color = Color3.fromRGB(45, 48, 58)
+	UIStroke.Color = Eclipse.AccentColor
 	UIStroke.Parent = ColorPickerHandler
 
 	SaViMap.Name = Eclipse.RandomString();
@@ -1930,7 +1930,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 		UICorner_2.Parent = ValueFrame
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = ValueFrame
 
 		ValueLabel.Name = Eclipse.RandomString();
@@ -2304,7 +2304,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 		UICorner.Parent = ColorPicker
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = ColorPicker
 
 		ImageLabel.Parent = ColorPicker
@@ -2428,7 +2428,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 		UICorner.Parent = Keybind
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = Keybind
 
 		ValueLabel.Name = Eclipse.RandomString();
@@ -2582,7 +2582,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 		UICorner.Parent = TextInput
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = TextInput
 
 		TextBox.Parent = TextInput
@@ -2713,7 +2713,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 		UICorner.Parent = Dropdown
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = Dropdown
 
 		BasedLabel.Name = Eclipse.RandomString();
@@ -2839,7 +2839,7 @@ function Eclipse:RegisiterHandler(Handler: Frame , Signal)
 			UICorner.Parent = DropdownHandler
 
 			UIStroke.Transparency = 0.650
-			UIStroke.Color = Color3.fromRGB(45, 48, 58)
+			UIStroke.Color = Eclipse.AccentColor
 			UIStroke.Parent = DropdownHandler
 
 			DropdownScrollFrame.Name = Eclipse.RandomString();
@@ -3259,7 +3259,7 @@ function Eclipse:CreateToolTips(Container: Frame , Name: string , Content: strin
 	UICorner.Parent = Tooltips
 
 	UIStroke.Transparency = 0.650
-	UIStroke.Color = Color3.fromRGB(45, 48, 58)
+	UIStroke.Color = Eclipse.AccentColor
 	UIStroke.Parent = Tooltips
 
 	TooltipName.Name = Eclipse.RandomString();
@@ -3434,7 +3434,7 @@ function Eclipse:RegisiterItem(Frame: Frame , Signel)
 		LineFrame.Name = Eclipse.RandomString();
 		LineFrame.Parent = BasedFrame
 		LineFrame.AnchorPoint = Vector2.new(0.5, 1)
-		LineFrame.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+		LineFrame.BackgroundColor3 = Eclipse.AccentColor
 		LineFrame.BackgroundTransparency = 0.650
 		LineFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		LineFrame.BorderSizePixel = 0
@@ -3601,7 +3601,7 @@ function Eclipse:RegisiterItem(Frame: Frame , Signel)
 		LineFrame.Name = Eclipse.RandomString();
 		LineFrame.Parent = ButtonFrame
 		LineFrame.AnchorPoint = Vector2.new(0.5, 1)
-		LineFrame.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+		LineFrame.BackgroundColor3 = Eclipse.AccentColor
 		LineFrame.BackgroundTransparency = 0.650
 		LineFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		LineFrame.BorderSizePixel = 0
@@ -3735,7 +3735,7 @@ function Eclipse:RegisiterItem(Frame: Frame , Signel)
 		LineFrame.Name = Eclipse.RandomString();
 		LineFrame.Parent = UserFrame
 		LineFrame.AnchorPoint = Vector2.new(0.5, 1)
-		LineFrame.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+		LineFrame.BackgroundColor3 = Eclipse.AccentColor
 		LineFrame.BackgroundTransparency = 0.650
 		LineFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		LineFrame.BorderSizePixel = 0
@@ -4389,7 +4389,7 @@ function Eclipse:CreateWindow(Config)
 	RightMenuFrame.ZIndex = 8
 
 	UIStroke.Transparency = 0.650
-	UIStroke.Color = Color3.fromRGB(45, 48, 58)
+	UIStroke.Color = Eclipse.AccentColor
 	UIStroke.Parent = RightMenuFrame
 
 	UICorner_4.CornerRadius = UDim.new(0, 13)
@@ -4407,7 +4407,7 @@ function Eclipse:CreateWindow(Config)
 	LineFrame_3.Name = Eclipse.RandomString();
 	LineFrame_3.Parent = RightHeader
 	LineFrame_3.AnchorPoint = Vector2.new(0.5, 1)
-	LineFrame_3.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+	LineFrame_3.BackgroundColor3 = Eclipse.AccentColor
 	LineFrame_3.BackgroundTransparency = 0.650
 	LineFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	LineFrame_3.BorderSizePixel = 0
@@ -4427,7 +4427,7 @@ function Eclipse:CreateWindow(Config)
 	ConfigFrame.ZIndex = 9
 
 	UIStroke_2.Transparency = 0.650
-	UIStroke_2.Color = Color3.fromRGB(45, 48, 58)
+	UIStroke_2.Color = Eclipse.AccentColor
 	UIStroke_2.Parent = ConfigFrame
 
 	UICorner_5.CornerRadius = UDim.new(0, 4)
@@ -4452,7 +4452,7 @@ function Eclipse:CreateWindow(Config)
 
 	LineFrame_4.Name = Eclipse.RandomString();
 	LineFrame_4.Parent = ConfigFrame
-	LineFrame_4.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+	LineFrame_4.BackgroundColor3 = Eclipse.AccentColor
 	LineFrame_4.BackgroundTransparency = 0.650
 	LineFrame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	LineFrame_4.BorderSizePixel = 0
@@ -5247,7 +5247,7 @@ function Eclipse:CreateWindow(Config)
 		UIListLayout.Padding = UDim.new(0, 4)
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = ConfigMenu
 
 		InputFrame.Name = Eclipse.RandomString();
@@ -5278,7 +5278,7 @@ function Eclipse:CreateWindow(Config)
 		LineFrame.Name = Eclipse.RandomString();
 		LineFrame.Parent = InputFrame
 		LineFrame.AnchorPoint = Vector2.new(0.5, 1)
-		LineFrame.BackgroundColor3 = Color3.fromRGB(45, 48, 58)
+		LineFrame.BackgroundColor3 = Eclipse.AccentColor
 		LineFrame.BackgroundTransparency = 0.650
 		LineFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		LineFrame.BorderSizePixel = 0
@@ -5330,7 +5330,7 @@ function Eclipse:CreateWindow(Config)
 		UICorner_2.Parent = TextInput
 
 		UIStroke_2.Transparency = 0.650
-		UIStroke_2.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke_2.Color = Eclipse.AccentColor
 		UIStroke_2.Parent = TextInput
 
 		TextBox.Parent = TextInput
@@ -5604,7 +5604,7 @@ function Eclipse:CreateWindow(Config)
 				BasedLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 				UIStroke.Transparency = 0.500
-				UIStroke.Color = Color3.fromRGB(45, 48, 58)
+				UIStroke.Color = Eclipse.AccentColor
 				UIStroke.Parent = ConfigItemFrame
 
 				local Render = LPH_NO_VIRTUALIZE(function(rst)
@@ -6176,7 +6176,7 @@ function Eclipse:CreateNotification()
 		UICorner.Parent = NotifyFrame
 
 		UIStroke.Transparency = 0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = NotifyFrame
 
 		LogoImage.Name = Eclipse.RandomString();
@@ -6339,7 +6339,7 @@ function Eclipse:CreateLogger()
 		UICorner.Parent = LogFrame
 
 		UIStroke.Transparency = 1--0.650
-		UIStroke.Color = Color3.fromRGB(45, 48, 58)
+		UIStroke.Color = Eclipse.AccentColor
 		UIStroke.Parent = LogFrame
 
 		LogContent.Name = Eclipse.RandomString();
@@ -6668,3 +6668,5 @@ function Eclipse:Unload()
 end;
 
 return Eclipse;
+
+
